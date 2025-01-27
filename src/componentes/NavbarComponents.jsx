@@ -19,8 +19,6 @@ export const NavbarComponents = () => {
         {!isEmpty(favorites) && (
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
               <NavDropdown title="Favorites" id="collapsible-nav-dropdown">
                 {favorites.map((favorite) => (
                   <NavDropdown.Item key={favorite.id} className="d-flex justify-content-between align-items-center">
