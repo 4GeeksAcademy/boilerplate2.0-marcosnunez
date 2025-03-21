@@ -20,7 +20,7 @@ export const FavoritesProvider = ({ children }) => {
             if (!prevFavorites.some(fav => fav.id === id)) {
                 return [...prevFavorites, { id, name, type }];
             }
-            return prevFavorites; // Avoid duplicates
+            return prevFavorites; 
         });
     };
 
